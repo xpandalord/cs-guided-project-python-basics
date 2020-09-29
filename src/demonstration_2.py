@@ -14,4 +14,15 @@ number(["a", "b", "c"]) # => ["1: a", "2: b", "3: c"]
 """
 def number(lines):
     # Your code here
+    output = []
+
+    # line_number = 1
+    # for line in lines:
+    #    output.append(f"{line_number}: {line}")
+    #    line_number += 1
+
+    for i in range(len(lines)):
+        output.append(f"{i + 1}: {lines[i]}")
+
+    return output
 
